@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+      <div class="col-12 col-sm-6 col-md-3">
+            <form [formGroup]=" userform" (ngSubmit)="onsubmit()" class="form-container">
+                    <div class="form-group">
+                      <label for="">First Name</label>
+                      <input type="text" class="form-control" formControlName="firstName" placeholder="Enter First Name">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="">Email</label>
+                      <input type="Email" class="form-control" formControlName="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Author</label>
+                      <input type="text" class="form-control" formControlName="author" placeholder="Enter Author Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Publish Date</label>
+                      <input type="date" class="form-control" formControlName="publishDate" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Textarea</label>
+                      <textarea class="form-control" formControlName="textArea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+             </form>
+      </div>
+  </div>
+</div>
